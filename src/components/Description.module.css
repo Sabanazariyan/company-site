@@ -1,0 +1,155 @@
+/* 
+/* تنظیمات کلی */
+.container,
+.content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 100px auto 0;
+  direction: rtl;
+  position: relative;
+}
+
+/* تصویر */
+.container img,
+.content img {
+  width: 406px;
+  height: 475px;
+}
+
+/* متن‌ها */
+.text,
+.text2 {
+  margin: 150px 50px 0 0;
+  text-align: right;
+}
+
+.text p,
+.text2 p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #344456;
+  padding: 0 150px 70px 50px;
+}
+
+.text span,
+.text2 span {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #344456;
+  padding-left: 120px;
+}
+
+/* خطوط */
+.line {
+  width: 91px;
+  height: 3px;
+  background-color: #ffc947;
+  position: absolute;
+  right: 450px;
+  top: 210px;
+}
+
+.linetwo {
+  width: 720px;
+  height: 3px;
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin: 250px 0 100px 0;
+  position: absolute;
+  right: 120px;
+}
+
+@media screen and (max-width: 1024px) {
+  .linetwo {
+    display: none;
+  }
+  .container,
+  .content {
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .text span,
+.text2 span {
+  display: inline-block;
+  width: 100%;
+}
+}
+
+/* *ریسپانسیو برای تبلت (عرض 768px تا 1024px)* */
+@media screen and (max-width: 1024px) {
+  .container, .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+  }
+
+  .container img, .content img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text, .text2 {
+    width: 80%;
+    margin: 0;
+    padding: 0 20px;
+    text-align: right;
+  }
+
+  .text p, .text2 p {
+    font-size: 1.3rem;
+    padding: 0 20px;
+  }
+
+  .text span, .text2 span {
+    font-size: 1.1rem;
+    padding-left: 0;
+  }
+
+  .line, .linetwo {
+    display: none; /* مخفی کردن خطوط در تبلت */
+  }
+}
+
+/* *ریسپانسیو برای موبایل (عرض کمتر از 768px)* */
+@media screen and (max-width: 768px) {
+  .container, .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+  }
+
+  .container img, .content img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .text, .text2 {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    text-align: right;
+  }
+
+  .text p, .text2 p {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+
+  .text span, .text2 span {
+    font-size: 1rem;
+    padding-left: 0;
+  }
+
+  .line, .linetwo {
+    display: none; /* مخفی کردن خطوط در موبایل */
+  }
+}

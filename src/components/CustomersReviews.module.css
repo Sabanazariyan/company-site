@@ -1,0 +1,209 @@
+.container {
+  max-width: 1700px;
+  margin: auto;
+  height: auto;
+  background-color: #2563eb;
+  margin-top: 150px;
+  position: relative;
+  direction: rtl;
+  padding-bottom: 50px;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0 150px 50px 0;
+  top: 130px;
+}
+
+.text p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.cards > img {
+  position: absolute;
+  left: 200px;
+  top: 220px;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 401px;
+  height: 190px;
+  background-color: #fff;
+  margin: 45px 30px 0 0;
+  border-radius: 21px;
+  direction: rtl;
+  position: relative;
+}
+
+/* .card1 {
+  margin-right: 75px;
+} */
+
+.container > img:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.text2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.text2 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text2 span {
+  display: inline-block;
+  margin: 3px 5px 0 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.card1 > div,
+.card2 > div,
+.card3 > div {
+  position: absolute;
+  top: 17px;
+  right: 95px;
+}
+
+.card1 > div > p,
+.card2 > div > p,
+.card3 > div > p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #54595f;
+}
+
+.card1 > div > span,
+.card2 > div > span,
+.card3 > div > span {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #54595f;
+}
+
+.card1 img:first-child,
+.card2 img:first-child,
+.card3 img:first-child {
+  width: 60px;
+  margin: 10px 20px 0 10px;
+}
+
+.card1 > span,
+.card2 > span,
+.card3 > span {
+  position: absolute;
+  bottom: 17px;
+  right: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #54595f;
+  line-height: 25px;
+  text-align: justify;
+  padding-left: 34px;
+}
+
+.card1 img:last-child,
+.card2 img:last-child,
+.card3 img:last-child {
+  position: absolute;
+  top: 27px;
+  left: 31px;
+}
+
+/* 🎯 ریسپانسیو برای تبلت */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 50px 20px;
+    height: fit-content;
+  }
+  .text2 {
+    padding-bottom: 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 90%;
+    max-width: 450px;
+  }
+  .container > img:last-child {
+    position: absolute;
+    right: 0;
+  }
+  .container > img:first-child {
+    position: absolute;
+    top: 0;
+    left: 100px;
+  }
+  .cards > img {
+    display: none;
+  }
+}
+
+/* 🎯 ریسپانسیو برای موبایل */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+  .text {
+    text-align: center;
+    justify-content: space-between;
+  }
+  .text p {
+    font-size: 1.3rem;
+    margin-right: 50px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 95%;
+    max-width: 350px;
+  }
+
+  .card1 img:first-child,
+  .card2 img:first-child,
+  .card3 img:first-child {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card1 img:last-child,
+  .card2 img:last-child,
+  .card3 img:last-child {
+    width: 80px;
+  }
+}

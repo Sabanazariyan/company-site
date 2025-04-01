@@ -1,0 +1,239 @@
+/* .container {
+  max-width: 1300px;
+  height: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2563eb;
+  border-radius: 25px;
+  direction: rtl;
+}
+
+.container > p {
+  direction: rtl;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 100px 350px 200px 100px;
+}
+
+.cards1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card1 {
+  width: 320px;
+  height: 304px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin: 30px;
+  position: absolute;
+  top: -150px;
+  right: 450px;
+}
+
+.card1 img {
+  margin: 50px 130px 30px 70px;
+}
+
+.card1 p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #344456;
+  margin: 0 60px 25px 0;
+}
+
+.card1 span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34445680;
+  margin-right: 40px;
+}
+
+.cards2 {
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+.card2 {
+  width: 320px;
+  height: 304px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin: 30px;
+  position: absolute;
+  top: -150px;
+  right: 80px;
+}
+
+.card2 img {
+  margin: 69px 130px 28px 70px;
+}
+
+.card2 img:last-child {
+  position: absolute;
+  right: 0px;
+  top: -16px;
+}
+
+.card2 p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #344456;
+  margin: 0 60px 25px 0;
+}
+
+.card2 span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34445680;
+  margin-right: 40px;
+}
+
+.cards3 {
+
+  display: flex;
+  justify-content: left;
+  position: relative;
+}
+
+.card3 {
+  width: 320px;
+  height: 304px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin: 30px;
+  position: absolute;
+  top: -150px;
+  left: 100px;
+}
+
+.card3 img {
+  margin: 50px 130px 30px 70px;
+}
+
+.card3 p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #344456;
+  margin: 0 60px 25px 0;
+}
+
+.card3 span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34445680;
+  margin-right: 40px;
+} */
+
+.container {
+  max-width: 1300px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #2563eb;
+  border-radius: 25px;
+  direction: rtl;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* استایل متن */
+.container > p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+/* تنظیمات برای بخش کارت‌ها */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+  /* position: relative; */
+}
+
+/* استایل کارت‌ها */
+.card1,
+.card2,
+.card3 {
+  width: 320px;
+  height: 304px;
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  /* position: relative; */
+  margin: 30px;
+  
+}
+
+.card2 {
+  position: relative;
+}
+
+.card1 img,
+.card3 img {
+  margin: 0 auto 20px;
+  display: block;
+  margin-top: 50px;
+}
+
+.card2 img {
+  margin: 18px auto 11px;
+  margin-top: 70px;
+}
+
+.card2 img:last-child {
+  position: absolute;
+  right: 130px;
+  top: 8px;
+}
+
+/* تغییرات برای تبلت */
+@media screen and (max-width: 1024px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 280px;
+  }
+  .card2 img:last-child {
+    position: absolute;
+    right: 110px;
+    top: 8px;
+  }
+}
+
+/* تغییرات برای موبایل */
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* نمایش کارت‌ها به‌صورت عمودی */
+    align-items: center;
+    position: relative;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 90%; /* کارت‌ها کل عرض صفحه را بگیرند */
+    margin-bottom: 20px; /* فاصله بین کارت‌ها */
+
+  }
+  .card2 img:last-child {
+    position: absolute;
+
+    right: 120px;
+    display: inline;
+
+  }
+}

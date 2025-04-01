@@ -1,0 +1,97 @@
+.container {
+  /* max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 65px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  position: relative; */
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.container p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2563eb;
+  padding-top: 24px;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #344456;
+  margin-top: 15px;
+} */
+
+/* ریسپانسیو برای تبلت */
+@media (max-width: 1024px) {
+  .container {
+    gap: 10px;
+  }
+
+  .container img {
+    width: 80px;
+    height: auto;
+  }
+
+  .container p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .container img {
+    width: auto;
+    height: auto;
+    margin: 5px 0;
+    
+  }
+
+  .container p {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}

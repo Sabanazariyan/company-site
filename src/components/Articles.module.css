@@ -1,0 +1,166 @@
+.container {
+  direction: rtl;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.text > div:first-child,
+.text > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.text p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #344456;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* تنظیمات کارت‌ها */
+.card1,
+.card2,
+.card3 {
+  width: calc(33.33% - 20px);
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تنظیمات عکس و دسته‌بندی */
+.photo1 img,
+.photo2 img,
+.photo3 img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.photo1 span,
+.photo2 span,
+.photo3 span{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.photo1 p,
+.photo2 p,
+.photo3 p {
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* متن درون کارت */
+.text1,
+.text2,
+.text3 {
+  padding: 20px;
+  text-align: justify;
+}
+
+.text1 > p,
+.text2 > p,
+.text3 > p {
+  font-size: 1.2rem;
+  color: #344456;
+  font-weight: 700;
+}
+
+.text1 > span,
+.text2 > span,
+.text3 > span {
+  font-size: 0.95rem;
+  color: #78889a;
+  display: block;
+  line-height: 1.6;
+}
+
+/* تاریخ */
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.date p {
+  font-size: 0.85rem;
+  color: #54595f;
+}
+
+/* ✅ تبلت (عرض < 1024px) */
+@media screen and (max-width: 1024px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: calc(50% - 20px);
+  }
+}
+
+/* ✅ موبایل (عرض < 768px) */
+@media screen and (max-width: 768px) {
+  .text {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 90%;
+  }
+
+  .text1 > p,
+  .text2 > p,
+  .text3 > p {
+    font-size: 1rem;
+  }
+
+  .text1 > span,
+  .text2 > span,
+  .text3 > span {
+    font-size: 0.85rem;
+  }
+}

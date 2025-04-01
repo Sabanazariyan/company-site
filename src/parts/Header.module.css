@@ -1,0 +1,130 @@
+.container {
+  max-width: 1700px;
+  margin: auto;
+  background-color: #2563eb;
+}
+
+.text {
+  font-family: YekanBakhMedium;
+  display: flex;
+  place-content: center;
+  padding: 20px 0 20px 0;
+}
+
+.text p {
+  color: #ffffff;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+
+.text span {
+  background-color: #ffc947;
+  margin-left: 7px;
+  border-radius: 4px;
+  padding: 4px 10px 6px 10px;
+  color: #444444;
+}
+
+.header {
+  max-width: 1700px;
+  margin: auto;
+  padding: 0 120px 18px 120px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.phone {
+  margin-top: 20px;
+  display: flex;
+}
+
+.phone div {
+  display: flex;
+  background-color: #f5f7fa;
+  height: fit-content;
+  padding: 5px 10px 0 10px;
+  border-radius: 3px;
+}
+
+.phone div span {
+  color: #2563eb;
+  padding-right: 6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* margin-top: 1px; */
+}
+
+.phone div p {
+  color: #344456;
+  font-family: YekanBakhMedium;
+  margin-top: 8px;
+  padding-right: 13px;
+  font-size: 1.1rem;
+}
+
+.phone span {
+  background-color: #f5f7fa;
+  height: fit-content;
+  padding: 10px 10px 0 10px;
+  font-size: 1.4rem;
+  margin-left: 5px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.features ul {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.selected {
+  color: #2563eb;
+}
+
+.features ul div {
+  display: flex;
+}
+
+.features ul div span {
+  margin: 5px 3px 0 0;
+}
+
+
+
+@media screen and (max-width:1024) {
+  .header {
+    padding: 0 40px 18px;
+  }
+  .features ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .phone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .phone span {
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .phone {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}

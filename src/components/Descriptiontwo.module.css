@@ -1,0 +1,210 @@
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    direction: rtl;
+    position: relative;
+  
+  }
+  
+  .container img {
+    width: 308px;
+    height: 373px;
+    margin-left: 100px;
+    margin-top: 130px;
+  }
+  
+  .text {
+    margin: 150px 50px 0 0;
+    text-align: justify;
+  }
+  
+  .text>p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #344456;
+    padding: 0 23px 70px 50px;
+  }
+  
+  .text > span {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #344456;
+    padding-left: 120px;
+    text-align: justify;
+  }
+  
+  .line {
+    width: 91px;
+    height: 3px;
+    background-color: #ffc947;
+    position: absolute;
+    right: 450px;
+    top: 210px;
+  }
+  
+  .desc {
+    width: 214px;
+    background-color: #2563eb;
+    border-radius: 4px;
+    display: flex;
+    margin-top: 60px;
+  }
+  
+  .desc p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 16px 30px 10px 10px;
+  }
+  
+  .desc span {
+    display: inline-block;
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    padding: 0;
+    margin-top: 21px ;
+  } */
+
+/* 🎯 تنظیمات اصلی برای نمایش دسکتاپ */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  direction: rtl;
+  position: relative;
+  padding: 50px 20px;
+}
+
+.container img {
+  width: 308px;
+  height: 373px;
+  margin-left: 100px;
+}
+
+.text {
+  flex: 1;
+  text-align: justify;
+  padding-right: 30px;
+}
+
+.text > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #344456;
+  margin-bottom: 20px;
+}
+
+.text > span {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #344456;
+  line-height: 1.8;
+  display: block;
+}
+
+/* 🎯 خط زرد */
+.line {
+  width: 91px;
+  height: 3px;
+  background-color: #ffc947;
+  position: absolute;
+  right: 450px;
+  top: 160px;
+  
+}
+
+/* 🎯 باکس اعضای تیم */
+.desc {
+  width: 214px;
+  background-color: #2563eb;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.desc p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  padding-right: 15px;
+  flex: 1;
+}
+
+.desc span {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* 🎯 ریسپانسیو برای تبلت */
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .text {
+    width: 80%;
+    padding: 0;
+  }
+
+  .desc {
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+/* 🎯 ریسپانسیو برای موبایل */
+@media screen and (max-width: 768px) {
+  .container img {
+    width: 80%;
+  }
+
+  .text {
+    width: 90%;
+  }
+
+  .text > p {
+    font-size: 1.3rem;
+  }
+
+  .text > span {
+    font-size: 1rem;
+  }
+
+  .desc {
+    width: 80%;
+    max-width: 250px;
+    padding: 8px;
+  }
+
+  .desc p {
+    font-size: 1rem;
+  }
+
+  .desc span {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,272 @@
+.container {
+  position: relative;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 45px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.text {
+  width: 50%;
+  padding: 90px 70px 50px 20px;
+  position: relative;
+}
+
+.text > p {
+  color: #344456;
+  opacity: 50%;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.text > p:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: right;
+  opacity: inherit;
+  color: inherit;
+}
+
+.text > p:first-child span {
+  color: #2563eb;
+  margin: 0 1px 0 4px;
+}
+
+.text > div {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 67px;
+}
+
+.text > div > p {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  background-color: #2563eb;
+  height: fit-content;
+  padding: 10px 15px 7px 15px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 25px 20px 0 0;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  background-color: #47c892;
+  height: fit-content;
+  margin: 25px 20px 0 0;
+  padding: 10px 15px 7px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.phone span {
+  margin: 2px 0 0 7px;
+}
+
+/* .photo > img {
+  width: 320px;
+  height: 470px;
+  margin: 50px 0 0 174px;
+  position: relative;
+  z-index: 2;
+} */
+/* 
+.photobg {
+  width: 320px;
+  height: 470px;
+  background: rgb(250, 195, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 195, 42, 0.8) 0%,
+    rgba(255, 255, 255, 1) 65%
+  );
+  transform: rotate(-30deg);
+  border-radius: 210px;
+  position: absolute;
+  left: 140px;
+  top: 60px;
+  z-index: 1;
+}
+
+.icons {
+  position: relative;
+}
+
+.icons img {
+  z-index: 10;
+}
+
+.icons .iconone {
+  position: absolute;
+  left: 440px;
+  bottom: 180px;
+  width: 138px;
+  height: 118px;
+  transform: rotate(-15deg);
+}
+
+.icons .icontwo {
+  position: absolute;
+  width: 71px;
+  height: 88px;
+  bottom: 350px;
+  left: 110px;
+}
+
+.icons .iconthree {
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fac32a;
+  position: absolute;
+  bottom: 12px;
+  left: 65px;
+}
+
+.history {
+  z-index: 12;
+  position: absolute;
+  bottom: -65px;
+  left: 420px;
+  padding: 15px 10px 15px 10px;
+  width: 177px;
+  height: 115px;
+  text-align: center;
+  background: linear-gradient(
+    261.87deg,
+    rgba(255, 255, 255, 0.3) 7.4%,
+    rgba(241, 241, 241, 0.3) 108.83%
+  );
+  box-shadow: 6.77366px 6.77366px 28.2236px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(11px);
+  border-radius: 17px;
+}
+
+.history p:first-child {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.history:last-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #344456;
+} */
+
+.line {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -60px;
+  bottom: 244px;
+  width: 189px;
+  height: 3px;
+  background: rgb(37, 99, 235);
+  background: linear-gradient(
+    80deg,
+    rgba(37, 99, 235, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .line {
+    display: none;
+  }
+  .text {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .photo img {
+    margin: auto;
+    text-align: center;
+  }
+  .text p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  .text > p:first-child {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .line {
+    right: 100px;
+  }
+
+  .phone {
+    font-size: 0.8rem;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .text > div > p {
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .text > div {
+    width: 100%;
+    justify-content: center;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text > p:first-child {
+    font-size: 1.5rem;
+  }
+
+  .text > p {
+    font-size: 1rem;
+  }
+  .phone {
+    margin: 15px auto;
+    margin-top: 10px;
+  }
+
+  .history {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .history p:first-child {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    text-align: center;
+  }
+
+  .icons img {
+    display: none;
+  }
+}
