@@ -13,14 +13,14 @@
 /* تصویر */
 .container img,
 .content img {
-  width: 406px;
-  height: 475px;
+  width: 506px;
+  height: 400px;
 }
 
 /* متن‌ها */
 .text,
 .text2 {
-  margin: 150px 50px 0 0;
+  /* margin: 150px 50px 0 0; */
   text-align: right;
 }
 
@@ -48,7 +48,7 @@
   background-color: #ffc947;
   position: absolute;
   right: 450px;
-  top: 210px;
+  top: 70px;
 }
 
 .linetwo {
@@ -59,9 +59,10 @@
     rgba(37, 99, 235, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  margin: 250px 0 100px 0;
+  /* margin: 250px 0 100px 0; */
   position: absolute;
   right: 120px;
+  top: 70px;
 }
 
 @media screen and (max-width: 1024px) {

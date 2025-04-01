@@ -121,6 +121,12 @@
     align-items: center;
     padding: 10px;
   }
+  .text{
+    flex-direction: column;
+    text-align:center ;
+    margin-right: 5px;
+  }
+  
   .phone {
     width: 100%;
     justify-content: center;

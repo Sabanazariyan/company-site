@@ -4,7 +4,7 @@ function Description() {
   return (
     <>
       <div className={styles.container}>
-        <img src="./Description/image1.png" alt=""  style={{marginBottom:'80px'}}/>
+        <img src="./Description/image1.png" alt=""  style={{marginBottom:'80px' , marginLeft:'50px'}}/>
         <div className={styles.line}></div>
         <div className={styles.text}>
           <p>اولین شرط استفاده از بازاریابی دیجیتال، طراحی سایت است</p>
@@ -15,10 +15,10 @@ function Description() {
             این دو مدل بازاریابی به کسب و کارهای کوچک و متوسط کمک کنیم تا به رشد
             و بالندگی سریعی برسند.
           </span>
-          <div className={styles.linetwo}></div>
         </div>
       </div>
       <div className={styles.content}>
+          <div className={styles.linetwo}></div>
         <div className={styles.text2}>
           <p>سئو و بهینه سازی موتورهای جستجوبرای سایت شما</p>
           <span>
