@@ -246,7 +246,6 @@
   .phone {
     margin: 10px auto;
     margin-top: 10px;
-
   }
 
   .history {
@@ -270,7 +269,6 @@
     margin: 0 auto;
     font-size: 0.8rem;
     padding-bottom: 10px;
-    
   }
 }
 
@@ -289,29 +287,29 @@
     margin: 0 auto;
     
   } */
-   .phone {
-  height: 35px;
-  margin: 0 auto;
-  padding: 9px 7px 0 7px;
-
-   }
+  .phone {
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 9px 7px 0 7px;
+  }
   .phone p {
-    font-size: 0.8rem;
-  
+    font-size: 0.7rem;
   }
   /* .text > div > p {
     margin: 0 auto;
     margin-right: 30px;
   } */
-   
-.text > div > p {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  background-color: #2563eb;
-  height: 35px;
-  padding: 9px 7px 0 7px;
-  margin: 0 auto;
-    margin-right: 30px;
+
+  .text > div > p {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-color: #2563eb;
+    height: 35px;
+    padding: 9px 7px 0 7px;
+    margin: 0 auto;
+    margin-right: 35px;
     font-size: 0.7rem;
-}
+    margin-top: 5px;
+  }
 }
