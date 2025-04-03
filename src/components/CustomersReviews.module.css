@@ -174,12 +174,19 @@
     padding: 30px 15px;
   }
   .text {
-    text-align: center;
-    justify-content: space-between;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    margin: 0 auto;
   }
   .text p {
-    font-size: 1.3rem;
-    margin-right: 50px;
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+  .text img {
+    width: 35px;
+    height: 35px;
+    margin: 7px 0 0 5px;
   }
 
   .cards {
@@ -205,5 +212,28 @@
   .card2 img:last-child,
   .card3 img:last-child {
     width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .text p {
+    font-size: 1.3rem;
+    margin-right: 0;
+  }
+  .text img {
+    width: 30px;
+    height: 30px;
+    margin: 7px 0 0 5px;
+  }
+  .card1,
+  .card2,
+  .card3 {
+    margin: auto;
   }
 }

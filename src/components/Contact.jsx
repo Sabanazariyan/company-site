@@ -2,7 +2,7 @@ import styles from "./Contact.module.css";
 function Contact() {
   return (
     <div className={styles.container}>
-      <img src="./Contact/image1.png" alt="" />
+      {/* <img src="./Contact/image1.png" alt="" /> */}
       <div className={styles.text}>
         <p>دریافت مشاوره رایگان</p>
         <span>

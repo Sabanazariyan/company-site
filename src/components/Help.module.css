@@ -154,7 +154,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  
+
   /* position: relative; */
 }
 
@@ -170,7 +170,6 @@
   text-align: center;
   /* position: relative; */
   margin: 30px;
-  
 }
 
 .card2 {
@@ -227,13 +226,20 @@
   .card3 {
     width: 90%; /* کارت‌ها کل عرض صفحه را بگیرند */
     margin-bottom: 20px; /* فاصله بین کارت‌ها */
-
   }
   .card2 img:last-child {
     position: absolute;
 
     right: 120px;
     display: inline;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .container > p {
+    font-size: 1.2rem;
+  }
+  .cards {
+    margin-left: 40px;
   }
 }
