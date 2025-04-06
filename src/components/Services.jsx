@@ -4,6 +4,11 @@ function Services() {
   return (
     <div>
       <div className={styles.container}>
+      <div className={styles.photo}>
+          <p>ما در دیمالند چه خدماتی ارائه می دهیم؟</p>
+          <img src="./Services/image.png" alt="" />
+          <div className={styles.line}></div>
+        </div>
         <div className={styles.text}>
           <div className={styles.service}>
             <img
@@ -49,11 +54,7 @@ function Services() {
             <p style={{ paddingTop: "25px" }}>آنالیز وبسایت</p>
           </div>
         </div>
-        <div className={styles.photo}>
-          <p>ما در دیمالند چه خدماتی ارائه می دهیم؟</p>
-          <img src="./Services/image.png" alt="" />
-          <div className={styles.line}></div>
-        </div>
+        
       </div>
     </div>
   );
